@@ -10,7 +10,7 @@ for l in lst:
     tot += l
     num_elem += 1
     
-print("\nmean: ", tot / num_elem)
+print("\nvalue: ", tot / num_elem)
 
 # O(n^4)
 # for l in range(1000):
@@ -37,4 +37,4 @@ for row in lst:
     for item in row:
         total += item
         ct += 1
-print("average: ", total / ct)
+print("value: ", total / ct)
