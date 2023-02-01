@@ -1,5 +1,6 @@
 class House():
-    def __init__(self, area_code, sq_ft, num_bedrms, num_bathrms, age_home):
+    def __init__(self, security_code, area_code, sq_ft, num_bedrms, num_bathrms, age_home):
+        self.__security_code = security_code
         self.area_code = area_code
         self.sq_ft = sq_ft
         self.num_bathrms = num_bathrms
@@ -7,6 +8,9 @@ class House():
         self.age_home = age_home
     
     # getters
+    def get_security_code(self):
+        return self.__security_code
+        
     def get_area_code(self):
         return self.area_code
         
@@ -23,6 +27,9 @@ class House():
         return self.age_home
         
     #setters
+    def set_security_code(self, security_code):
+        self.__security_code = security_code
+        
     def set_area_code(self, area_code):
         self.area_code = area_code
         

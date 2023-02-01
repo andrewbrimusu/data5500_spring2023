@@ -1,9 +1,12 @@
 import numpy as np
 import os
-# os.system("pip3 install numpy") 
+import time
+# os.system("pip3 install numpy")
 
 
-prcs = [float(x) for x in open("/home/ubuntu/environment/data5500.fa21/week3_algo_analysis_tradingexample/wmt.txt").readlines()]
+start=time.time()
+
+prcs = [float(x) for x in open("/home/ubuntu/environment/data5500_fall2022/week3_algo_analysis_tradingexample/wmt.txt").readlines()]
 print(prcs)
 
 buy = 0
@@ -12,7 +15,7 @@ i = 0
 days = 5
 
 for p in prcs:
-    prcs = [float(x) for x in open("/home/ubuntu/environment/data5500.fa21/week3_algo_analysis_tradingexample/wmt.txt").readlines()]
+    prcs = [float(x) for x in open("/home/ubuntu/environment/data5500_fall2022/week3_algo_analysis_tradingexample/wmt.txt").readlines()]
 
     if i >= days:
         avg = np.mean(prcs[i-days:i])
@@ -31,3 +34,5 @@ for p in prcs:
     i += 1
 print("total profit: ", profit)
 print("returns: ", profit/prcs[0])
+
+print("total time: ", time.time() - start)

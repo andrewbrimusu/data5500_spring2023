@@ -30,7 +30,8 @@ class DeckOfCards():
         
     def print_deck(self):
         for card in self.deck:
-            print(card.face, "of", card.suit, end=", ")
+            print(card)
+            # print(card.face, "of", card.suit, end=", ")
         print("---")
         
     def get_card(self):
