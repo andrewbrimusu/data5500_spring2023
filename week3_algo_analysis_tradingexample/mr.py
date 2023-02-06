@@ -15,7 +15,7 @@ i = 0
 days = 5
 
 for p in prcs:
-    prcs = [float(x) for x in open("/home/ubuntu/environment/data5500_fall2022/week3_algo_analysis_tradingexample/wmt.txt").readlines()]
+    #prcs = [float(x) for x in open("/home/ubuntu/environment/data5500_fall2022/week3_algo_analysis_tradingexample/wmt.txt").readlines()]
 
     if i >= days:
         avg = np.mean(prcs[i-days:i])

@@ -13,11 +13,33 @@ for l in lst:
 print("\nvalue: ", tot / num_elem)
 
 # O(n^4)
-# for l in range(1000):
-#     for j in range(1000):
-#         for k in range(1000):
-#             for m in range(1000):
-#                 print(l * j * k * m, end=" ")
+for l in range(1000):
+    for j in range(1000):
+        for k in range(1000):
+            for m in range(1000):
+                print(l * j * k * m, end=" ")
+                 
+                 
+                 
+                 
+                 
+for l in range(1000):
+    print(l * j * k * m, end=" ")
+    
+for j in range(1000):
+    print(l * j * k * m, end=" ")
+        
+for k in range(1000):
+    print(l * j * k * m, end=" ")
+            
+for m in range(1000):
+    print(l * j * k * m, end=" ")
+                 
+                 
+        
+        
+        
+        
                  
 # for i in range(1000):
 #     for j in range(1000):
