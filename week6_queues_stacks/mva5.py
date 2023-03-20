@@ -1,6 +1,6 @@
 print("hello")
 
-f = open("/home/ubuntu/environment/data5500.fa21/week6_queues_stacks/GME.txt", "r")
+f = open("/home/ubuntu/environment/data5500_spring2023/week6_queues_stacks/AAPL.txt", "r")
 # lines = f.readlines()
 # print("lines: ", lines)
 
@@ -30,7 +30,7 @@ while line:
             short = prices[5]
         else:
             pass #do nothing
-        prices.pop()
+        prices.pop(0)
         
 print("tot_profit: ", tot_profit)
 print("percenage return: ", tot_profit/prices[0])

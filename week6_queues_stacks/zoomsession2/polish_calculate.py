@@ -25,9 +25,9 @@ def operation(o,a,b):
         result=a/b
     return result
 
-for i,v in enumerate(polish_list):
+# for i,v in enumerate(polish_list):
+for v in polish_list:
     if v in operator:
-        print(temp)
         leng=len(temp)
         arg1=temp.pop()
         print("arg1==>",arg1)
@@ -38,5 +38,6 @@ for i,v in enumerate(polish_list):
         temp.append(result)
         print("temp in iteration==>",temp)
     else:
-        temp.append(i)
-        
+        temp.append(v)
+    
+    print(temp)
