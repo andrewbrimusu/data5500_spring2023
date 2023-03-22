@@ -38,7 +38,7 @@ def insert(node, key):
 def findMin(node):
     pass
 
-# Task 2. Write a recursive findMin function
+# Task 2. Write a recursive findMinRec function
 
     
 # Task 3. Write a findMaxRecursive
@@ -134,8 +134,9 @@ def main():
     inorder(root)
     # PrintTree(root)
     
+    ##########################################################
+    # Uncomment deleteNode calls after findMin is complete Task 1
     
-    # Uncomment deleteNode calls after minNode is complete
     # # deleting 
     # print("\nDelete 20")
     # root = deleteNode(root, 20)
@@ -165,46 +166,52 @@ def main():
     
     display(tree2)
     
-    # Uncomment after preorder and postorder have are complete
+    
+    ###########################################################
+    # Uncomment after preorder and postorder have are complete, Task 4 and Task 5
     # inorder(tree2)
     # print()
     # preorder(tree2)
     # print()
     # postorder(tree2)
     
-    print("\nmin value: ", findMin(tree2).key)
-    print("\nmin value recursive: ", findMinRec(tree2).key)
+    
+    
+    ############################################################
+    # Uncomment after findMin is complete Task 1
+    
+    # print("\nmin value: ", findMin(tree2).key)
+    # print("\nmin value recursive: ", findMinRec(tree2).key)
    
-        
-        
+    
     # create a list of 10000 numbers
     # lst = [random.randint(1,10000) for i in range(1000000)]
     # # each number is a random number between 1 and 10000 random.randint(1,10000)
     
     # # in other loop for in 1 to 10000, check to see if i is in the list
-    start1 = time.time()
-    for i in range(1,10001):
-        for l in lst:
-            if i == l:
-                break
-    end1 = time.time()
-    print("search time list (sec): ", end1-start1)
+    # start1 = time.time()
+    # for i in range(1,10001):
+    #     for l in lst:
+    #         if i == l:
+    #             break
+    # end1 = time.time()
+    # print("search time list (sec): ", end1-start1)
     
     
     
-    root = None
-    for i in range(1000000):
-        root = insert(root, random.randint(1,10000))
+    # root = None
+    # for i in range(1000000):
+    #     root = insert(root, random.randint(1,10000))
         
     
-    start = time.time()
-    for i in range(10000):
-        findval(root, i)
-    end = time.time()
+    # start = time.time()
+    # for i in range(10000):
+    #     findval(root, i)
+    # end = time.time()
     
-    print("search time tree (sec): ",end-start)
+    # print("search time tree (sec): ",end-start)
     
-    print("---------------------")
+    # print("---------------------")
     
     
 main()
