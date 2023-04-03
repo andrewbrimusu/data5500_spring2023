@@ -9,7 +9,7 @@ from networkx.classes.function import path_weight
 
 import matplotlib.pyplot as plt
 
-fil = open("/home/ec2-user/environment/code/week9_graphs/zoomsession2/edges.txt")
+fil = open("/home/ubuntu/environment/data5500_spring2023/week9_graphs/zoomsession2/edges.txt")
 
 g = nx.DiGraph()
 edges = []

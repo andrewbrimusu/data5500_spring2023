@@ -7,15 +7,16 @@ from itertools import permutations
 
 import os
 # os.system("sudo pip3 install networkx")
+# os.system("sudo apt-get update")
 # os.system("sudo apt-get install libjpeg-dev zlib1g-dev")
-# os.system("sudo pip3 install Pillow")
-# os.system("sudo pip3 install matplotlib")
+# os.system("sudo -H pip3 install Pillow")
+# os.system("sudo -H pip3 install matplotlib")
 
 import matplotlib.pyplot as plt
 import networkx as nx
 from networkx.classes.function import path_weight
 
-file = open("/home/ubuntu/environment/data5500.fa21/week9_graphs/zoomsession2/edges.txt")
+file = open("/home/ubuntu/environment/data5500_spring2023/week9_graphs/zoomsession2/edges.txt")
 
 g = nx.DiGraph()
 
@@ -30,6 +31,7 @@ for line in file.readlines():
     
 print(edges)
 # g.add_weighted_edges_from(edges) 
+
 for e in edges:
     g.add_edge(e[0], e[1], weight=e[2])
 
