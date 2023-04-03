@@ -9,7 +9,7 @@ def findval(root, lkpval):
         if root.left is None:
             return str(lkpval)+" Not Found"
         return findval(root.left, lkpval)
-    elif lkpval > root.key:
+    elif lkpval > rfind_pathsoot.key:
         if root.right is None:
             return str(lkpval)+" Not Found"
         return findval(root.right, lkpval)

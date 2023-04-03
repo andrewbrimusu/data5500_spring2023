@@ -6,13 +6,19 @@ from itertools import permutations
 
 
 import os
-# os.system("sudo pip3 install networkx")
 # os.system("sudo apt-get update")
 # os.system("sudo apt-get install libjpeg-dev zlib1g-dev")
-# os.system("sudo -H pip3 install Pillow")
+# os.system("sudo pip3 install Pillow")
 # os.system("sudo -H pip3 install matplotlib")
 
+# os.system("sudo pip3 install networkx")
+# os.system("sudo apt-get install python3-matplotlib")
+
+import matplotlib
+matplotlib.use('Agg')
+
 import matplotlib.pyplot as plt
+
 import networkx as nx
 from networkx.classes.function import path_weight
 
